@@ -6,12 +6,8 @@ public:
         for(int i=0;i<strs.size();i++){
             string temp = strs[i];
             sort(temp.begin(), temp.end());
-            if(map.count(temp)){
                 map[temp].push_back(strs[i]);
-            }
-            else{
-                map[temp].push_back(strs[i]);
-            }
+            
         }
         
         for(auto i = map.begin(); i != map.end(); i++)
